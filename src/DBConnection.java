@@ -11,7 +11,7 @@ public class DBConnection {
             FileInputStream fis = new FileInputStream("db.properties");
             props.load(fis);
 
-            String url = props.getProperty("jdbc:mysql://localhost:3306/servlet-jdbc");
+            String url = props.getProperty("jdbc:mysql://localhost:3306/school_db");
             String user = props.getProperty("root");
             String password = props.getProperty("root");
 

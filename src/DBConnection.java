@@ -11,9 +11,9 @@ public class DBConnection {
             FileInputStream fis = new FileInputStream("db.properties");
             props.load(fis);
 
-            String url = props.getProperty("url");
-            String user = props.getProperty("user");
-            String password = props.getProperty("password");
+            String url = props.getProperty("jdbc:mysql://localhost:3306/servlet-jdbc");
+            String user = props.getProperty("root");
+            String password = props.getProperty("root");
 
             conn = DriverManager.getConnection(url, user, password);
         } catch (Exception e) {

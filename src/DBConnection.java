@@ -13,7 +13,7 @@ public class DBConnection {
 
             String url = props.getProperty("jdbc:mysql://localhost:3306/school_db");
             String user = props.getProperty("root");
-            String password = props.getProperty("root");
+            String password = props.getProperty("Tiger@123");
 
             conn = DriverManager.getConnection(url, user, password);
         } catch (Exception e) {
